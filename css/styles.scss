@@ -1,18 +1,18 @@
 @font-face {
 	font-family: Roboto-Thin;
-	src: url("/font/Roboto-Thin.ttf");
+	src: url("../font/Roboto-Thin.ttf");
 }
 @font-face {
 	font-family: Roboto-Regular;
-	src: url("/font/Roboto-Regular.ttf");
+	src: url("../font/Roboto-Regular.ttf");
 }
 @font-face {
 	font-family: Roboto-Medium;
-	src: url("/font/Roboto-Medium.ttf");
+	src: url("../font/Roboto-Medium.ttf");
 }
 @font-face {
 	font-family: Roboto-Bold;
-	src: url("/font/Roboto-Bold.ttf");
+	src: url("../font/Roboto-Bold.ttf");
 }
 
 * {
@@ -24,7 +24,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: url("/image/officeimage.jpeg") center no-repeat;
+	background: url("../image/officeimage.jpeg") center no-repeat;
 	background-size: cover;
 }
 
