@@ -74,10 +74,12 @@ main {
 }
 
 .content__section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin: 10px 0;
-	letter-spacing: 3px;
 	width: 75%;
-	user-select: none;
+	font-size: 1.2em;
 	h3 {
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
@@ -89,6 +91,9 @@ main {
 		}
 	}
 	h3, h2 {
+		width: 75%;
+		letter-spacing: 3px;
+		user-select: none;
 		text-shadow: 1px 1px 1px black;
 		text-align: center;
 		font-size: 1.7em;
@@ -114,15 +119,46 @@ main {
 }
 
 .section__listitem {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	width: 75%;
+	letter-spacing: 1px;
 	margin-top: 15px;
-	font-family: Roboto-Regular;
+	a {
+		font-family: Roboto-Regular;
+		text-shadow: 1px 1px 1px black;
+		color: skyblue;
+		text-decoration: none;
+	}
 	p {
+		font-family: Roboto-Regular;
 		text-shadow: 1px 1px 1px black;
 		color: white;
 		&:first-child {
+			text-decoration: underline;
 			font-family: Roboto-MediumItalic;
 		}
 	}
+	li {
+		width: 40%;
+		font-family: Roboto-Regular;
+		text-shadow: 1px 1px 1px black;
+		color: white;
+	}
+	h4 {
+		margin-bottom: 5px;
+		font-family: Roboto-Medium;
+		font-size: 1.3em;
+		text-shadow: 1px 1px 1px black;
+		color: white;
+	}
+}
+
+#objetivos {
+	text-decoration: none;
+	font-family: Roboto-Regular;
 }
 
 footer {
@@ -132,5 +168,20 @@ footer {
 @media screen and (max-width: 600px) {
 	.main__content {
 		width: 90%;
+	}
+	.content__section {
+		align-items: stretch;
+		font-size: 1em;
+		h3, h2 {
+			width: 100%;
+		}
+	}
+	.section__listitem {
+		display: flex;
+		align-items: flex-start;
+		width: 100%;
+		li {
+			width: 100%;
+		}
 	}
 }
