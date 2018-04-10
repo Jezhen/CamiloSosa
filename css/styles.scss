@@ -7,6 +7,10 @@
 	src: url("../font/Roboto-Regular.ttf");
 }
 @font-face {
+	font-family: Roboto-MediumItalic;
+	src: url("../font/Roboto-MediumItalic.ttf");
+}
+@font-face {
 	font-family: Roboto-Medium;
 	src: url("../font/Roboto-Medium.ttf");
 }
@@ -56,6 +60,7 @@ main {
 	display: flex;
 	justify-content: center;
 	width: 100%;
+	min-height: calc(100vh - 150px);
 }
 
 .main__content {
@@ -72,8 +77,16 @@ main {
 	margin: 10px 0;
 	letter-spacing: 3px;
 	width: 75%;
+	user-select: none;
 	h3 {
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
 		font-family: Roboto-Medium;
+		transition: .2s;
+		cursor: pointer;
+		&:hover {
+			background-color: rgba(black, .6);
+		}
 	}
 	h3, h2 {
 		text-shadow: 1px 1px 1px black;
@@ -90,15 +103,24 @@ main {
 	}
 }
 
+.content__photo {
+	margin: 10px 0;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-image: url("../image/profile.png");
+	background-size: cover;
+	background-color: rgba(black,.5)
+}
+
 .section__listitem {
 	margin-top: 15px;
 	font-family: Roboto-Regular;
-	display: flex;
 	p {
 		text-shadow: 1px 1px 1px black;
 		color: white;
 		&:first-child {
-			margin-right: 10px;
+			font-family: Roboto-MediumItalic;
 		}
 	}
 }
